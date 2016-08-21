@@ -1,0 +1,10 @@
+<p><%= notice %></p>
+
+<h1>問合せ一覧</h1>
+
+<% @contacts.each do |contact| %>
+  <p>名前:<%= contact.name %></p>
+  <p>メールアドレス:<%= contact.email %></p>
+  <p>内容:<%= contact.content %></p>
+
+<% end %>
